@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image Gallery</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background: #270033;
+                font-family: "lato";
+            }
+            .wrapper{
+                width: 70%;
+                margin: 0px auto;
+                height: 100vh;
+                background:#eeeeee;
+                color: #2f2f2f;
+                padding: 10px 50px;
+            }
+            .card{
+                font-family: "roboto",monospace;
+                margin: 40px 10px;
+                height: auto;
+                cursor: pointer;
+            }
+            .card-content:hover{
+                outline: 2px solid #162b9e;
+            }
+            .card-content{
+                background: #fff;
+            }
+            .small-caps{
+                font-variant: small-caps;
+            }   
+            .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                height: auto;
+                margin: 0px auto;
+            }
+            .card,img{
+                width: 300px;
+                height: 150px;
+            }
+            .card-footer{
+                padding: 10px 5px;
+            }
+            .space-between{
+                justify-content: space-between;
+            }
+            .card .label-title{
+                color:#630d2f;
+                font-weight: bold;
+            }
+            .card small{
+                color: #b8b8b8;
+            }
+            div[class="row"] .left > * , div[class="row"] .right>*{
+                display: block;
+            }
+            .svg{
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+            }  
+            .green1{
+                background: var(--green1);
+            }
+            .red2{
+                background: var(--red2);
+            }
+            .red3{
+                background: var(--red3);
+            }
+            .red4{
+                background: var(--red4);
+            }
+            :root{
+                --green1:#559e0e;
+                --red2:#ff5400;
+                --red3:#ea0000;
+                --red4:#8e0101;
+            }
+            h2{
+                padding: 0px;
+                margin: 0px;
+            }
+            .gal-header{
+                display: flex;
+                flex-direction: row;
+            }
+            .close{
+                font-weight: bold;
+                font-size: 2em;
+                cursor: pointer;
+            }
+            .rtl{
+                direction: rtl;
+            }
+            label[for="autor"]{
+                font-weight: bold;
+            }
+            span[class="icon"] img{
+                width: 20px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+           <div class="gal-header">
+            <div style="flex:3"><h2>Photo Gallery</h2>
+               <label for="autor">
+                <span class="icon">
+                   <img src="autor.png" alt="author">
+               </span>
+               Mark Angelo Gonzales 
+               </label>
+               
+                <small>5/20/2018</small>
+               
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magni accusamus magnam praesentium necessitatibus facere doloribus vero ad, corrupti nobis minus ea non reiciendis asperiores blanditiis quos, sapiente eum nemo.</p>
+           </div>
+           <div style="flex:1" class="rtl">
+               <label for="" class="close">&times;</label>
+               <h2>*****</h2>
+               <small><a href="#">Rate</a></small>
+           </div>
+           </div>
+            <div class="row">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header"></div>
+                    <div class="card-body">
+                       <img src="imgsamp1.jpg" alt="image1">
+                    </div>
+                    <div class="card-footer">
+                        <div class="row space-between">
+                            <div class="left small-caps">
+                                <label class="label-title">Basic Design</label>
+                                <div class="palletes">
+                                    <small>Color Palletes</small>
+                                    <div class="svg green1"></div>
+                                    <div class="svg red2"></div>
+                                    <div class="svg red3"></div>
+                                    <div class="svg red4"></div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label for="reviews">*****</label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header"></div>
+                    <div class="card-body">
+                       <img src="imgsamp1.jpg" alt="image1">
+                    </div>
+                    <div class="card-footer">
+                        <div class="row space-between">
+                            <div class="left small-caps">
+                                <label class="label-title">Basic Design</label>
+                                <div class="palletes">
+                                    <small>Color Palletes</small>
+                                    <div class="svg green1"></div>
+                                    <div class="svg red2"></div>
+                                    <div class="svg red3"></div>
+                                    <div class="svg red4"></div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label for="reviews">*****</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header"></div>
+                    <div class="card-body">
+                       <img src="imgsamp1.jpg" alt="image1">
+                    </div>
+                    <div class="card-footer">
+                        <div class="row space-between">
+                            <div class="left small-caps">
+                                <label class="label-title">Basic Design</label>
+                                <div class="palletes">
+                                    <small>Color Palletes</small>
+                                    <div class="svg green1"></div>
+                                    <div class="svg red2"></div>
+                                    <div class="svg red3"></div>
+                                    <div class="svg red4"></div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label for="reviews">*****</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header"></div>
+                    <div class="card-body">
+                       <img src="imgsamp1.jpg" alt="image1">
+                    </div>
+                    <div class="card-footer">
+                        <div class="row space-between">
+                            <div class="left small-caps">
+                                <label class="label-title">Basic Design</label>
+                                <div class="palletes">
+                                    <small>Color Palletes</small>
+                                    <div class="svg green1"></div>
+                                    <div class="svg red2"></div>
+                                    <div class="svg red3"></div>
+                                    <div class="svg red4"></div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label for="reviews">*****</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
